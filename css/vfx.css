@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#header-v2{
+    position: relative;
+    display: flex;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+}
+#footer{
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+}
+.videoVimeo{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border: none;
+}
+#videoGallery{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.videoVFX{
+    width: 45%;
+    border-radius: 10px;
+    padding: 5px;
+}
+.accent-vfx-top{
+    top: 0px;
+    right: 430px;
+}
+.accent-vfx-mid{
+    top: 600px;
+}
+.accent-vfx-mid1{
+    bottom: 1800px;
+    right: 0px;
+}
+.accent-vfx-mid2{
+    bottom: 700px;
+}
+.accent-vfx-bottom{
+    bottom: 20px;
+    right: 330px;
+}

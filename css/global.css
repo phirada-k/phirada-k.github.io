@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Fustat:wght@200..800&display=swap');
+
 
 :root {
   /* Font family variable */
   --cormorant-unicase: "Cormorant Unicase", serif;
 
   /* Weight variables */
-  --cormorant-light: 300;
+  --cormorant-light: 200;
   --cormorant-regular: 400;
   --cormorant-medium: 500;
   --cormorant-semibold: 600;
@@ -14,6 +14,16 @@
 
     /* Font family variable */
   --bellefair: "Bellefair", serif;
+  --fustat:"Fustat";
+
+    /* Weight variables */
+  --fustat-light: 300;
+  --fustat-regular: 400;
+  --fustat-medium: 500;
+  --fustat-semibold: 600;
+  --fustat-bold: 700;
+  --fustat-extrabold: 800;
+
 
     /* Weight variables */
   --bellefair-light: 300;
@@ -29,8 +39,12 @@
 
 body{
     background-color: var(--bg-color);
+    position: relative;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2.5%;
+    margin: 0;
 }
-
 h1{
     font-family: var(--cormorant-unicase);
     font-weight: var(--cormorant-light);
@@ -40,8 +54,8 @@ h1{
 }
 
 p{
-    font-family: var(--bellefair);
-    font-weight: var(--bellefair-regular);
+    font-family: var(--fustat);
+    font-weight: var(--fustat-light);
     font-size: 18px;
     color: var(--text-color);
 }
@@ -49,14 +63,14 @@ p{
 a {
   text-decoration: none !important;
   cursor: pointer !important;
+  color: var(--text-color);
 }
 
 .accent{
-  position: fixed;
+  position: absolute;
   width: 300px; 
   height: 300px;
   border-radius: 50%;
-  background-color: #975A40;
   filter: blur(120px);
   z-index: -1;
 }
@@ -92,4 +106,12 @@ a {
 
 .blue{
   background: #3E869E;
+}
+.accent-left{
+    left: -140px;
+    bottom: -100px;
+}
+.accent-right{
+    right: -50px;
+    top: 150px;
 }

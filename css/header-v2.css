@@ -1,0 +1,52 @@
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.first-name-logo-v2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    margin:0px;
+    padding:0px;
+    gap: 10px;
+}
+.first-name-v2{
+    font-size: 60px;
+    position: relative;
+    margin:0px;
+    padding:0px;
+}
+.logo-v2{
+    width: 60px;
+    top:10px;
+    position: relative;
+    margin:0px;
+    padding:0px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0;
+    justify-content: center;
+    margin:0px;
+    padding:0px;
+}
+
+.nav-home-text-v2{
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+    transition: all 0.3s ease;
+}
+
+.nav-home-text-v2:hover{
+    color: var(--hover-color);
+    transform: translateY(-2px);
+}

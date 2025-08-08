@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFX Works</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vfx.css">
+</head>
+<body>
+    <div class="accent orange accent-vfx-top"></div>
+    <div class="accent blue accent-vfx-mid"></div>
+    <div class="accent orange accent-vfx-mid1"></div>
+    <div class="accent orange accent-vfx-mid2"></div>
+    <div class="accent blue accent-vfx-bottom"></div>
+    <main>
+        <script src="js/header-v2.js"></script>
+        <div id="header-v2"></div>
+        <iframe class="videoVimeo" title="vimeo-player" src="https://player.vimeo.com/video/905012038" allowfullscreen></iframe>
+        <div id="videoGallery">
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/Instigators.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/Supacell.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/comotion-phirada-1.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/comotion-phirada-2.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/comotion-phirada-3.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/comotion-phirada-4.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/library-breakdown.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/FlyingShipV01.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/dandelionBlow.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/succulentTexture.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/dryIce.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/carved_in_stone_FX.mp4" type="video/mp4">
+            </video>
+            <video class="videoVFX" autoplay loop muted playsinline>
+                <source src="images/vfx/videos/For_IG_Breakdown.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <script>
+    document.querySelectorAll('.videoVFX').forEach(video => {
+        video.addEventListener('mouseenter', () => {
+            video.setAttribute('controls', 'true');
+        });
+        video.addEventListener('mouseleave', () => {
+            video.removeAttribute('controls');
+        });
+    });
+    </script>
+
+    <script src="js/footer.js"></script>
+    <div id="footer"></div>
+
+</body>
+</html>
