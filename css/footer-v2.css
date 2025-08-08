@@ -1,0 +1,20 @@
+#footer{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    border: green solid;
+}
+.footer-content{
+    align-items: center;
+    gap: 13px;
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+}
+.resume{
+    font-size: 25px;
+    transition: all 0.25s ease;
+}
+.resume:hover{
+    color: var(--hover-color);
+}

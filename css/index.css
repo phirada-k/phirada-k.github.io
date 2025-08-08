@@ -1,0 +1,85 @@
+body{
+    position: relative;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2.5%;
+    margin: 0;
+}
+.index-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.first-name-logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    margin:0px;
+    padding:0px;
+}
+.first-name{
+    font-size: 80px;
+    position: relative;
+        margin:0px;
+    padding:0px;
+}
+.logo{
+    width: 80px;
+    top:10px;
+    position: relative;
+    margin:0px;
+    padding:0px;
+}
+.last-name{
+    position: relative;
+    align-items: first baseline;
+    font-size: 40px;
+    margin:0px;
+    padding:0px;
+    top:-20px;
+    padding-left: 85px;
+}
+#nav-home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    z-index: 10000;
+}
+.nav-home-text{
+    font-size: 65px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+.nav-home-text:hover{
+    transform: translateX(-10px);
+    color: var(--hover-color);
+}
+
+.accent-home-position-top{
+    top: -110px;
+    right: 360px;
+}
+.accent-home-position-bottom{
+    bottom: -120px;
+    right: -10px;
+}
+.photo-home{
+    position: fixed;
+    bottom: 0px;
+    left: -150px;
+    width: 90%;
+    height: auto;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+.photo{
+    height: auto;
+    width: 100%;
+}

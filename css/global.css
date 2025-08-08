@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Font family variable */
+  --cormorant-unicase: "Cormorant Unicase", serif;
+
+  /* Weight variables */
+  --cormorant-light: 300;
+  --cormorant-regular: 400;
+  --cormorant-medium: 500;
+  --cormorant-semibold: 600;
+  --cormorant-bold: 700;
+
+    /* Font family variable */
+  --bellefair: "Bellefair", serif;
+
+    /* Weight variables */
+  --bellefair-light: 300;
+  --bellefair-regular: 400;
+  --bellefair-medium: 500;
+  --bellefair-semibold: 600;
+  --bellefair-bold: 700;
+
+  --text-color: #E2F8FF;
+  --bg-color:#0F0F12;
+  --hover-color:#7296a2;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    font-family: var(--cormorant-unicase);
+    font-weight: var(--cormorant-light);
+    color: var(--text-color);
+    font-size: 35px;
+    text-decoration: none;
+}
+
+p{
+    font-family: var(--bellefair);
+    font-weight: var(--bellefair-regular);
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.accent{
+  position: fixed;
+  width: 300px; 
+  height: 300px;
+  border-radius: 50%;
+  background-color: #975A40;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.fadeIn{
+    /* Start fully transparent */
+  opacity: 0;
+  /* Animate opacity from 0 to 1 */
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.delay-1{
+  animation-delay: 0.25s; /* delay before animation starts */
+}
+
+.delay-2{
+  animation-delay: 0.6s; /* delay before animation starts */
+}
+
+.delay-3{
+  animation-delay: 0.15s; /* delay before animation starts */
+}
+
+.orange{
+  background: #975A40;
+}
+
+.blue{
+  background: #3E869E;
+}
