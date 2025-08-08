@@ -9,6 +9,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 10000;
 }
 .first-name-logo{
     position: relative;
