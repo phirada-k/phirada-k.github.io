@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loadCSS("css/footer-v1.css");
     } else {
       // On other pages
-      loadCSS("css/footer-v2.css");
+      loadCSS("../css/footer-v2.css");
     }
   }
 });
