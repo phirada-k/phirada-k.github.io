@@ -24,7 +24,7 @@ function loadCSS(filename) {
 
 document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("#header-v2")) {
-    loadHTML("#header-v2", "header-v2.html");
+    loadHTML("#header-v2", "/header-v2.html");
 
     const pathSegments = window.location.pathname.split("/").filter(Boolean);
 
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (pathSegments.length === 0 || pathSegments[pathSegments.length - 1] === "index.html") {
       // Root index page or /folder/index.html
-      cssPath = "css/header-v2.css";
     } else {
       // Pages in subfolders
       cssPath = "../css/header-v2.css";
