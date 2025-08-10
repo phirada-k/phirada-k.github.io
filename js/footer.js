@@ -24,7 +24,7 @@ function loadCSS(filename) {
 
 document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("#footer")) {
-    loadHTML("#footer", "footer.html");
+    loadHTML("#footer", "/footer.html");
 
     const pathSegments = window.location.pathname.split("/").filter(Boolean);
     // e.g. "/" → []
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (pathSegments.length === 0 || pathSegments[pathSegments.length - 1] === "index.html") {
       // root index or /folder/index.html
-      cssPath = "css/footer-v1.css";
+      cssPath = "/css/footer-v1.css";
     } else {
       // inside a folder (e.g., /resume/resume.html)
-      cssPath = "../css/footer-v2.css";
+      cssPath = "/css/footer-v2.css";
     }
 
     loadCSS(cssPath);
