@@ -26,14 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("#footer")) {
     loadHTML("#footer", "footer.html");
 
-    const currentPage = window.location.pathname.split("/").pop();
+    const pathSegments = window.location.pathname.split("/").filter(Boolean);
+    // e.g. "/" → []
+    // "/vfx/" → ["vfx"]
+    // "/resume/" → ["resume"]
+    // "/resume/index.html" → ["resume", "index.html"]
 
-    if (currentPage === "" || currentPage === "index.html") {
-      // On index page
-      loadCSS("css/footer-v1.css");
+    let cssPath;
+
+    if (pathSegments.length === 0 || pathSegments[pathSegments.length - 1] === "index.html") {
+      // root index or /folder/index.html
+      cssPath = "css/footer-v1.css";
     } else {
-      // On other pages
-      loadCSS("../css/footer-v2.css");
+      // inside a folder (e.g., /resume/resume.html)
+      cssPath = "../css/footer-v2.css";
     }
+
+    loadCSS(cssPath);
   }
 });
