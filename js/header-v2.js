@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentPage === "" || currentPage === "index.html") {
     } else {
       // On other pages
-      loadCSS("css/header-v2.css");
+      loadCSS("../css/header-v2.css");
     }
   }
 });
