@@ -1,14 +1,37 @@
 <header>
-        <a href="/index.html">
-            <div class="first-name-logo-v2">
-                <img class='logo-v2' src="/images/logo.png" alt="Logo">
-                <h1 class="first-name-v2">PHIRADA</h1>
-            </div>
-        </a>
-        <nav class="nav-bar">
-            <a href="/vfx/"><h1 class="nav-home-text-v2">VFX</h1></a>
-            <a href="/photography/"><h1 class="nav-home-text-v2">PHOTO</h1></a>
-            <a href="/resume/"><h1 class="nav-home-text-v2">RESUME</h1></a>
-            <a href="/about/"><h1 class="nav-home-text-v2">ABOUT</h1></a>
-        </nav>
+    <a href="/index.html">
+        <div class="first-name-logo-v2">
+            <img class='logo-v2' src="/images/logo.png" alt="Logo">
+            <h1 class="first-name-v2">PHIRADA</h1>
+        </div>
+    </a>
+
+
+    <nav class="nav-bar" id="nav-bar">
+        <a href="/vfx/"><h1 class="nav-home-text-v2">VFX</h1></a>
+        <a href="/photography/"><h1 class="nav-home-text-v2">PHOTO</h1></a>
+        <a href="/resume/"><h1 class="nav-home-text-v2">RESUME</h1></a>
+        <a href="/about/"><h1 class="nav-home-text-v2">ABOUT</h1></a>
+    </nav>
+
+    <!-- Hamburger SVG -->
+    <div class="menuIcon" id="menuIcon" aria-label="Menu toggle" role="button" tabindex="0">
+    <svg width="30" height="30" viewBox="0 0 30 30" >
+        <rect class="line top" y="5" width="30" height="3.5" rx="2" ry="2" />
+        <rect class="line middle" y="13" width="30" height="3.5" rx="2" ry="2" />
+        <rect class="line bottom" y="21" width="30" height="3.5" rx="2" ry="2" />
+    </svg>
+    </div>
+
+    <!-- Menu initially hidden -->
+  <div class="menuOverlay" id="menuOverlay">
+    <nav>
+      <ul>
+        <li class="nav-vfx"><a href="/vfx"><h1>VFX</h1></a></li>
+        <li class="nav-photography"><a href="/photography"><h1>Photography</h1></a></li>
+        <li class="nav-resume"><a href="/resume"><h1>Resume</h1></a></li>
+        <li class="nav-about"><a href="/about"><h1>About</h1></a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

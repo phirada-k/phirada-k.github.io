@@ -15,7 +15,7 @@
 .first-name{
     font-size: 80px;
     position: relative;
-        margin:0px;
+    margin:0px;
     padding:0px;
 }
 .logo{
@@ -76,4 +76,52 @@
 .photo{
     height: auto;
     width: 100%;
+}
+
+
+/* Small devices (mobile phones) */
+@media screen and (max-width: 600px) {
+  /* Styles for small screens */
+  .index-header{
+    gap: 10px;
+    text-align: center;
+  }
+  .first-name-logo{
+    padding-top: 15%;
+    padding-left: 15%;
+  }
+  .first-name{
+    font-size: 33px;
+  }
+  .last-name{
+    padding-left: 15%;
+    font-size: 28px;
+    top: -7px;
+  }
+  .logo{
+    width: 30px;
+    top: -1px;
+  }
+  #nav-home{
+    align-items: center;
+    gap: 30px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .nav-home-text{
+    font-size: 40px ;
+  }
+  .photo-home{
+    position: fixed;
+    left: 0px;
+    width: 110%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for medium screens */
+  body {
+    border: green solid;
+  }
 }

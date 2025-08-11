@@ -25,3 +25,17 @@ footer{
 .icon:hover{
     opacity: 0.7;
 }
+/* Small devices (mobile phones) */
+@media screen and (max-width: 600px) {
+  /* Styles for small screens */
+.footer-content{
+    justify-content: center;
+}
+.resume{
+    font-size: 17px;
+}
+.icon{
+    width: 24px;
+    height: auto;
+}
+}

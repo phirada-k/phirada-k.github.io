@@ -34,9 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
       // Root index page or /folder/index.html
     } else {
       // Pages in subfolders
-      cssPath = "../css/header-v2.css";
+      cssPath = "/css/header-v2.css";
     }
 
     loadCSS(cssPath);
   }
 });
+

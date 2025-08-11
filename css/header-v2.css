@@ -5,25 +5,31 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 .first-name-logo-v2{
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items:baseline;
+    align-items:center;
     margin:0px;
     padding:0px;
     gap: 10px;
+    justify-content: center;
+    text-align: center;
 }
 .first-name-v2{
-    font-size: 60px;
-    position: relative;
+    font-size: 45px;
     margin:0px;
     padding:0px;
+    transition: all 0.5s ease;
+}
+.first-name-v2:hover{
+color: var(--hover-color);
 }
 .logo-v2{
-    width: 60px;
-    top:10px;
+    width: 35px;
     position: relative;
     margin:0px;
     padding:0px;
@@ -49,4 +55,97 @@ header{
 .nav-home-text-v2:hover{
     color: var(--hover-color);
     transform: translateY(-2px);
+}
+.menuIcon , .menuOverlay{
+    display: none;
+}
+
+/* Hamburger icon styles for mobile */
+@media screen and (max-width: 600px) {
+  /* Show hamburger on mobile */
+  .nav-bar{
+    display: none;
+  }
+  .first-name-v2{
+    display: none;
+  }
+  .menuIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+  }
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  padding-top: 60px; /* Give some top padding under header */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* When active, show overlay with fade in */
+.menuOverlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Style the menu nav inside overlay */
+.menuOverlay nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menuOverlay nav ul li {
+  margin: 20px 0;
+}
+
+.menuOverlay nav ul li a h1 {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding-bottom: 2%;
+  transition: all 0.3s ease;
+}
+
+.menuOverlay nav ul li a:hover {
+  color: #ff4081; /* example highlight color */
+}
+
+/* Hamburger lines common styles */
+.menuIcon .line {
+fill: var(--text-color);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Change line color if active */
+.menuIcon.active .line {
+  fill: white; 
+}
+
+/* Animate hamburger to X */
+.menuIcon.active .top {
+  transform: translateX(8px) rotate(45deg);
+}
+
+.menuIcon.active .middle {
+  opacity: 0;
+}
+
+.menuIcon.active .bottom {
+  transform: translateX(-13px) translateY(10px) rotate(-45deg);
+}
+
+/* Mouse pointer for hamburger */
+.menuIcon {
+  z-index: 1100; /* on top */
+}
 }
