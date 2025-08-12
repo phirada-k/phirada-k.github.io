@@ -1,3 +1,4 @@
+
 .index-header{
     position: relative;
     display: flex;
@@ -58,10 +59,12 @@
 .accent-home-position-top{
     top: -110px;
     right: 360px;
+    z-index: -1;
 }
 .accent-home-position-bottom{
     bottom: -120px;
     right: -10px;
+      z-index:-1;
 }
 .photo-home{
     position: fixed;
@@ -71,6 +74,7 @@
     height: auto;
     margin: 0;
     transition: all 0.2s ease;
+    z-index: 1000;
 }
 
 .photo{
@@ -114,7 +118,19 @@
   .photo-home{
     position: fixed;
     left: 0px;
+    bottom: -5px;
     width: 110%;
   }
+  .accent{
+  width: 150px;
+  height: 150px;
+  filter: blur(50px);
+}
+.accent-home-position-top{
+  right: 260px;
+}
+.accent-home-position-bottom{
+  bottom: -70px;
+}
 }
 
