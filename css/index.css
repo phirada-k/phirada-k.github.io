@@ -88,7 +88,7 @@
   }
   .first-name-logo{
     padding-top: 15%;
-    padding-left: 15%;
+    padding-left: 3%;
   }
   .first-name{
     font-size: 33px;
@@ -118,10 +118,3 @@
   }
 }
 
-/* Medium devices (tablets) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Styles for medium screens */
-  body {
-    border: green solid;
-  }
-}

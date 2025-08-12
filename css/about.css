@@ -31,20 +31,61 @@ body{
 }
 
 
-/* Small devices (mobile phones) */
+
 @media screen and (max-width: 600px) {
-  /* Styles for small screens */
-  body {
-    border: red solid;
-    padding: 0;
-    margin: 0;
-  }
+#about-content{
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.portrait{
+  width: 95%;
+  height: auto;
+}
+.text-right{
+  width: 100%;
+  text-align: center;
 }
 
-/* Medium devices (tablets) */
+.about-text, .contact{
+    font-size: 14px;
+}
+.contact-email{
+  font-size: 20px;
+}
+.software-icons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* two equal columns */
+  width: 100%;
+    gap: 20px; /* space between items */
+    width: 100%;
+    justify-items: center; /* centers icons in each column */
+}
+.software-icon{
+  width: 35px;
+}
+.software-icon-nuke{
+  width: 75px;
+}
+.accent{
+  width: 300px;
+  height: 300px;
+}
+.accent-left{
+  top: 100px;
+  left: -200px;
+}
+.accent-right{
+  top: 500px;
+  right: -100px;
+}
+}
+
+/* Medium devices (tablets) 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Styles for medium screens */
+  
   body {
     border: green solid;
   }
 }
+*/
