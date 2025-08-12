@@ -85,6 +85,11 @@
 
 /* Small devices (mobile phones) */
 @media screen and (max-width: 600px) {
+  html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden; /* but keep vertical scroll */
+}
   /* Styles for small screens */
   .index-header{
     gap: 10px;
