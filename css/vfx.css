@@ -52,11 +52,28 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .videoVimeo{
-    height: auto;
-    padding-top: 4%;
-  }
+.video-container{
+    width: 90%;
+    display: flex;
+    justify-content: center; /* center content horizontally */
+    margin: 0 auto; 
+}
+.video-container iframe{
+height: 200px;
+}
   .videoVFX{
     width: 80%;
   }
+}
+
+@media screen and (min-width: 601px) and (max-width:1000px){
+.video-container{
+    width: 90%;
+    display: flex;
+    justify-content: center; /* center content horizontally */
+    margin: 0 auto; 
+}
+.video-container iframe{
+height: 400px;
+}
 }

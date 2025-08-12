@@ -61,7 +61,7 @@ color: var(--hover-color);
 }
 
 /* Hamburger icon styles for mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   /* Show hamburger on mobile */
   .nav-bar{
     display: none;
