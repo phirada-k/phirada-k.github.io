@@ -73,6 +73,7 @@ a {
   border-radius: 50%;
   filter: blur(120px);
   z-index: -1;
+  pointer-events: none;
 }
 
 .fadeIn{

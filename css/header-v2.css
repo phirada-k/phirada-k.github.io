@@ -58,6 +58,7 @@ color: var(--hover-color);
 }
 .menuIcon , .menuOverlay{
     display: none;
+    z-index: 10000;
 }
 
 /* Hamburger icon styles for mobile */
