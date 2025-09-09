@@ -1,0 +1,17 @@
+  .design-gallery{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .web-design-img {
+    width: 800px; 
+    padding: 0.5%;
+    border-radius: 25px;
+  }
+
+
+@media (max-width: 1100px) {
+    .web-design-img {
+        max-width: 100%; /* take full width on mobile */
+    }
+}

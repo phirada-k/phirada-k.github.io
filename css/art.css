@@ -1,0 +1,54 @@
+.art-gallery {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section titles */
+.art-gallery h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Sketch gallery grid */
+.imgCol,
+.gallery.watercolors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* spacing between images */
+     place-items: center;
+}
+
+/* Images styling */
+.sketch-img,
+.watercolor-img {
+    width: 100%;
+    height: auto;
+    display: inline;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* PDF container */
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .pdf-container embed {
+        height: 700px; /* smaller height for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .imgCol,
+    .gallery.watercolors {
+        grid-template-columns: 1fr; /* single column on mobile */
+    }
+    .pdf-container embed {
+        height: 500px; /* mobile height */
+    }
+}
