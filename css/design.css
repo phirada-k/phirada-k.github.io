@@ -1,0 +1,41 @@
+  .graphic-design-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* spacing between images */
+    place-items: center;
+  }
+.design-img{
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .copyright-notice{
+    font-size: 12px;
+  }
+  .design-work{
+    text-align: center;
+    width: 90%;
+  }
+  .design-video{
+    width: 100%;
+    height: auto; 
+    padding: 0.5%;
+    border-radius: 25px;
+  }
+@media (max-width: 1024px) {
+    .design-work {
+        display: inline;
+        max-width: 100%;
+         width: 70%;
+    }
+    .graphic-design-gallery{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
