@@ -32,9 +32,9 @@
   --bellefair-semibold: 600;
   --bellefair-bold: 700;
 
-  --text-color: #E2F8FF;
-  --bg-color:#0F0F12;
-  --hover-color:#7296a2;
+  --text-color: #00141b;
+  --bg-color:#ffffff;
+  --hover-color:#008ab8;
 }
 
 body{
@@ -102,11 +102,11 @@ a {
 }
 
 .orange{
-  background: #975A40;
+  background: #f37a46,0;
 }
 
 .blue{
-  background: #3E869E;
+  background: #3cc3f0,0;
 }
 .accent-left{
     left: -140px;
