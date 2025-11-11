@@ -32,16 +32,27 @@
     .design-work {
         display: inline;
         max-width: 100%;
-         width: 70%;
+         width: 90%;
+    }
+    .design-img{
+      width: 100%;
+      border-radius: 10px;
     }
     .graphic-design-gallery{
         grid-template-columns: 1fr;
         width: 100%;
     }
+    .design-video{
+      padding: 0;
+      border-radius: 15px;
+    }
+    .copyright-notice{
+      font-size: 9px;
+    }
     h1{
         font-size: 23px;
     }
     p{
-        font-size: 16px;
+        font-size: 12px;
     }
 }

@@ -110,7 +110,7 @@ color: var(--hover-color);
 }
 
 .menuOverlay nav ul li a h1 {
-  color: var(--text-color); 
+  color: white; 
   font-size: 25px;
   text-decoration: none;
   padding-bottom: 2%;
@@ -118,7 +118,7 @@ color: var(--hover-color);
 }
 
 .menuOverlay nav ul li a:hover {
-  color: #ff4081; /* example highlight color */
+  color: --var(--text-color) /* example highlight color */
 }
 
 /* Hamburger lines common styles */
@@ -129,7 +129,7 @@ fill: var(--text-color);
 
 /* Change line color if active */
 .menuIcon.active .line {
-  fill: var(--text-color); 
+  fill: white; 
 }
 
 /* Animate hamburger to X */

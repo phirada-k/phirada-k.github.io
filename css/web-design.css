@@ -14,4 +14,10 @@
     .web-design-img {
         max-width: 100%; /* take full width on mobile */
     }
+    h1{
+      font-size: 19px;
+    }
+    p{
+      font-size: 12px;
+    }
 }
