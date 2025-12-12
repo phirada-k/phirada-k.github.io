@@ -3,7 +3,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -15,7 +15,7 @@ header{
     align-items:center;
     margin:0px;
     padding:0px;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     text-align: center;
 }
@@ -24,15 +24,20 @@ header{
     margin:0px;
     padding:0px;
     transition: all 0.5s ease;
+    display: none;
 }
 .first-name-v2:hover{
 color: var(--hover-color);
 }
 .logo-v2{
-    width: 35px;
+    width: 45px;
     position: relative;
     margin:0px;
     padding:0px;
+    filter: invert(100%);
+}
+.logo-v2:hover{
+    filter: invert(100%) brightness(120%);
 }
 
 .nav-bar{

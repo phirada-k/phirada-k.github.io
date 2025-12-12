@@ -29,6 +29,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+.about-text, .contact,
+.contact-email{
+  font-size: 17px;
+}
 
 
 

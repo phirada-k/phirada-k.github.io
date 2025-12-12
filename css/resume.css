@@ -8,6 +8,7 @@
 }
 .resume{
     border-radius: 20px;
+    filter: grayscale(100%);
 }
 .accent-left-resume{
     left: 0px;

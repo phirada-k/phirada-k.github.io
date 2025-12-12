@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     z-index: 10000;
+    margin-top: 10px;
 }
 .first-name-logo{
     position: relative;
@@ -21,10 +22,11 @@
 }
 .logo{
     width: 80px;
-    top:10px;
+    top:6px;
     position: relative;
     margin:0px;
     padding:0px;
+    filter: invert(100%);
 }
 .last-name{
     position: relative;
@@ -32,8 +34,8 @@
     font-size: 40px;
     margin:0px;
     padding:0px;
-    top:-20px;
-    padding-left: 85px;
+    top:-25px;
+    padding-left: 88px;
 }
 #nav-home{
     position: relative;
@@ -46,7 +48,7 @@
     z-index: 9999;
 }
 .nav-home-text{
-    font-size: 65px;
+    font-size: 60px;
     padding: 0;
     margin: 0;
     transition: all 0.2s ease;
@@ -70,7 +72,7 @@
     position: fixed;
     bottom: 0px;
     left: -150px;
-    width: 90%;
+    width: 80%;
     height: auto;
     margin: 0;
     transition: all 0.2s ease;
