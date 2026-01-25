@@ -34,10 +34,9 @@ color: var(--hover-color);
     position: relative;
     margin:0px;
     padding:0px;
-    filter: invert(100%);
 }
 .logo-v2:hover{
-    filter: invert(100%) brightness(120%);
+    filter: brightness(120%);
 }
 
 .nav-bar{
