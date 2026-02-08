@@ -40,9 +40,9 @@
 body{
     background-color: var(--bg-color);
     position: relative;
-    padding-left: 13%;
-    padding-right: 13%;
-    padding-top: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
     margin: 0;
 }
 h1{

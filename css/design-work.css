@@ -1,0 +1,55 @@
+.work-gallery{
+    width: 100%;
+    text-align: center;
+}
+.work-video{
+    width: 95%;
+}
+.work-img{
+    width: 85%;
+}
+.cowcow{
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 20px;
+}
+.anderson{
+    margin-top: 2%;
+    width: 80%;
+}
+.copyright{
+    font-size: 12px;
+}
+.work-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 6px;
+}
+
+.work-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+h1{
+    font-size: 29px;
+}
+p{
+    font-size: 16px;
+}
+
+@media (max-width: 1024px){
+        h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 12px;
+    }
+}

@@ -4,24 +4,32 @@
     gap: 6px; /* spacing between images */
     place-items: center;
   }
-.design-img{
-    width: 85%;
-    height: auto;
+  .design-img{
+    width: 100%;
     border-radius: 15px;
-  }
-  .copyright-notice{
-    font-size: 12px;
+      height: 100%;          /* REQUIRED */
+  object-fit: cover;
+  display: block;
   }
   .design-work{
-    text-align: center;
-    width: 95%;
+    margin-top: 2%;
   }
-  .design-video{
-    width: 100%;
-    height: auto; 
-    padding: 0.5%;
-    border-radius: 20px;
-  }
+  .design-thumb {
+  width: 100%;
+  max-width: 720px;   /* optional */
+  height: 300px;      /* consistent rectangle */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: -12px;
+}
+.design-thumb img {
+  transition: transform 0.4s ease;
+}
+
+.design-thumb:hover img {
+  transform: scale(1.05);
+}
+
   p {
     font-size: 16px;
   }
