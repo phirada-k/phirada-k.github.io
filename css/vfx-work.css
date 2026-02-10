@@ -1,0 +1,52 @@
+.work-gallery{
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+}
+.title{
+    font-size: 20px;
+    margin-top: 0%;
+}
+.title-02{
+    font-size: 20px;
+}
+.video{
+    padding:0;
+    width: 75%;
+    height: auto;
+    margin-bottom: 2%;
+}
+.breakdown-img-texture{
+    width: 50%;
+}
+.breakdown-video{
+    width: 100%;
+}
+.breakdown-photo-gallery{
+    max-width: 100%;
+}
+.breakdown-img{
+    width: 75%;
+}
+.breakdown-img-lib{
+    width: 100%;
+}
+.suc{
+    width: 65%;
+}
+.two-column{
+    display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ place-items: center;
+    max-width: 100%;
+}
+.breakdown-video-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    place-items: center;
+    gap: 2px;
+    max-width: 100%;
+}
+p {
+    font-size: 15px;
+}

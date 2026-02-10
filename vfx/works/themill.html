@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Phirada</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/vfx-work.css">
+</head>
+
+<body>
+    <div id="header-v2"></div>
+    <main>
+        <div class="work-gallery">
+            <p class="title">SCAD X The Mill NY Collaboration Class</p>
+            <p>A part of SCAD's collaborative class with The Mill (NY Office). The students were assigned into team to pitch a commercial and recieve weekly feedback from The Mill team. </br>
+            As an FX Artist, I was responsible for effects in shot 3 which includes lightning effects, sparks effects and flag vellum effects.
+            </p>
+            <p>Full Video</p>
+            <video muted controls autoplay loop class="video">
+                <source src="/images/vfx/videos/TheMill.MP4" type="video/mp4">
+            </video>
+            
+            <p> Shot 3 with my FX works</p>
+            <video muted playsinline controls autoplay loop class="video">
+                <source src="/images/vfx/videos/themill-shot3.mp4" type="video/mp4">
+            </video>
+
+            <p class="title-02">Breakdown Video</p>
+            <div class="breakdown-video-gallery">
+                <video muted playsinline control autoplay loop class="breakdown-video">
+                    <source src="/images/vfx/breakdown/themill-breakdown-main.mp4" type="video/mp4">
+                </video>
+                <video muted playsinline control autoplay loop class="breakdown-video">
+                    <source src="/images/vfx/breakdown/themill-breakdown-video-1.mp4" type="video/mp4">
+                </video>
+                <video muted playsinline control autoplay loop class="breakdown-video">
+                    <source src="/images/vfx/breakdown/themill-breakdown-video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <p class="title-02">Houdini Process for Lightning</p>
+            <div class="breakdown-photo-gallery">
+                <p>For procedural steps for creating a starting point, scatter points were used on the surface of the object. In this project, the car model was used.</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-1.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Once scattered the points, assign three different color to later use for different the starting time and different types of the lightning. In my case, I'm separating the points into three colors, and grouped them into three groups, which later can reduce the amount of lightning. For now I'm using green and blue.</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-2.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Also project those scatter point on the ground (or where the end of the lightning will shoot to) using Ray node.</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-3.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Using Add node to add lines between the two point on the car and the ground</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-4.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Using for each node to create the line to generate in slightly different time for more realistic lightning. At the same time, using resample, edit and VOP node for flickering the lightning.</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-5.PNG" alt="mill-breakdown" class="breakdown-img">
+                <img src="/images/vfx/breakdown/themill-breakdown-6.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Lastly, for the sparks on the ground. Using attribute transfer when the lightning mesh touch the ground, to create a point as a source for sparks.</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-8.PNG" alt="mill-breakdown" class="breakdown-img">
+                <p>Then create sparks from particle simulation (popnet).</p>
+                <img src="/images/vfx/breakdown/themill-breakdown-7.PNG" alt="mill-breakdown" class="breakdown-img">
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="../../js/header-v2.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/menu-icon.js"></script>
+
+</body>
+</html>

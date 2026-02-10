@@ -8,6 +8,7 @@ body{
     display: flex;
     align-items: center;
     gap: 35px;
+    height: auto;
 }
 .portrait{
     width: 450px;
@@ -29,36 +30,40 @@ body{
     align-items: center;
     justify-content: center;
 }
+.interview{
+  font-size: 15px;
+}
 .about-text, .contact,
 .contact-email{
   font-size: 17px;
 }
-
-
-
-@media screen and (max-width: 600px) {
-  html, body{
-    overflow-x: hidden;
-  }
-#about-content{
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
+.filmography-block{
+  display: block;
+  padding-left: 4%;
+  padding-right: 4%;
 }
+.film-gallery-row{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* two columns */
+  gap: 6px;
+}
+.film-gallery-column{
+    display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.filmography{
+  width: 100%;
+}
+
+@media screen and (max-width: 1220px) {
 .portrait{
-  width: 95%;
+  width: 45%;
   height: auto;
 }
 .text-right{
   width: 100%;
   text-align: center;
-}
-
-.about-text, .contact{
-    font-size: 14px;
-}
-.contact-email{
-  font-size: 22px;
 }
 .software-icons{
   display: grid;
@@ -68,6 +73,29 @@ body{
     width: 100%;
     justify-items: center; /* centers icons in each column */
 }
+#about-content{
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  html, body{
+    overflow-x: hidden;
+  }
+.portrait{
+  width: 85%;
+  height: auto;
+}
+.about-text, .contact{
+    font-size: 15px;
+}
+.contact-email{
+  font-size: 22px;
+}
+
 .software-icon{
   width: 35px;
 }
@@ -86,13 +114,8 @@ body{
   top: 500px;
   right: -100px;
 }
+.film-gallery-row{
+  grid-template-columns: repeat(3, 1fr); /* two columns */
+  gap: 6px;
 }
-
-/* Medium devices (tablets) 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  
-  body {
-    border: green solid;
-  }
 }
-*/

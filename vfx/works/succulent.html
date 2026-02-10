@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Phirada</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/vfx-work.css">
+</head>
+
+<body>
+    <div id="header-v2"></div>
+    <main>
+        <div class="work-gallery">
+            <p class="title">Procedural Succulent Pot Texture</p>
+            <p>A procedural texture project creating photoreal pot texture.</br>
+                Responsible for procedural texture, and lighting using Houdini render with Redshift and composite lighting in Nuke.
+            </p>
+            <video muted playsinline controls autoplay loop class="video">
+                <source src="/images/vfx/videos/succulentTexture.mp4" type="video/mp4">
+            </video>
+
+            <p class="title">Reference</p>
+            <div class="breakdown-photo-gallery">
+                <img src="/images/vfx/breakdown/succulent-ref.png" alt="suc-breakdown" class="breakdown-img">
+            </div>
+
+            <div class="gallery-smaller">
+                <p class="title"></br>Breakdown - Pot</p>
+                <p>overall node setup</p>
+                <img src="/images/vfx/breakdown/succulent-bd-0-all-node.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>Base color</p>
+                <p>Noise node is used to create a curve line as a mask to separate the two colors and ramp controls the area of two colors.</p>
+                <img src="/images/vfx/breakdown/succulent-bd-1.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/succulent-bd-2.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>On top of the base color, brown noises cover both colors so another noise node is mix with base colors through RS ColorMix</p>
+                <img src="/images/vfx/breakdown/succulent-bd-3.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/succulent-bd-4.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>Brown Gradient on the Edge</p>
+                <p>Those nodes were connected to standard material and blended with brown lines using Material blend. There are two brown lines on top of the base color; 
+                    one on the edge of the vase and separating the two colors in the middle of the vase. 
+                    The edge of the vase separate with the middle line since the line in the middle can use the ramp from the base color node</p>
+                <img src="/images/vfx/breakdown/succulent-bd-5.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/succulent-bd-6.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>Roughness difference</p>
+                <p>The same ramp from base color is used for coat roughness to make the pink part glossier than the white part, separating the two materials.</p>
+                <img src="/images/vfx/breakdown/succulent-bd-7.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>Bump</p>
+                <p>For the bump map, a Noise node is used to create a horizontal mask and connect to the bump node.</p>
+                <img src="/images/vfx/breakdown/succulent-bd-8.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>Final pot texture</p>
+                <img src="/images/vfx/breakdown/succulent-bd-9.png" alt="suc-breakdown" class="breakdown-img suc">
+
+                <p class="title"></br> Breakdown - Leaves</p>
+                <p>Base colors of the leaves are gradient from green to pink-ish red so the ramp is used to control the gradient of the colors</p>
+                <img src="/images/vfx/breakdown/succulent-leaves-1.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>From references, the leaves don’t show any patterns like other succulents, but there are some subsurfaces on the side of the leaves,  </br>
+                    so I used UV based vertical noise node and connect to Subsurface  </p>
+                <img src="/images/vfx/breakdown/succulent-leaves-2.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/succulent-leaves-3.png" alt="suc-breakdown" class="breakdown-img suc">
+                <p>To be able to replicate the scratches and irregular pattern on the leaves, I use noise and ramp then connect to sheen and roughness </br>
+                    to be able to control the areas that are more shiny</p>
+                <img src="/images/vfx/breakdown/succulent-leaves-4.png" alt="suc-breakdown" class="breakdown-img suc">
+                
+                <p class="title"></br> Breakdown - Stones</p>
+                <p>Random color for stone using attribute wrangle node in the object level to assign random shades in the stone. Cd usercolor node is 
+                    connected to the standard material node.</p>
+                <img src="/images/vfx/breakdown/stone-bd-1.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/stone-bd-2.png" alt="suc-breakdown" class="breakdown-img suc">
+                <img src="/images/vfx/breakdown/stone-bd-3.png" alt="suc-breakdown" class="breakdown-img suc">
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="../../js/header-v2.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/menu-icon.js"></script>
+
+</body>
+</html>

@@ -2,20 +2,30 @@
     width: 100%;
     text-align: center;
 }
+.work-sub-gallery{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */ 
+    text-align: center;
+    width: 100%;
+}
 .work-video{
-    width: 95%;
+    width: 85%;
 }
 .work-img{
-    width: 85%;
+    width: 100%;
+}
+.title{
+    font-size: 20px;
+    margin-top: 0%;
 }
 .cowcow{
     margin-top: 2%;
-    width: 100%;
+    width: 70%;
     border-radius: 20px;
 }
 .anderson{
     margin-top: 2%;
-    width: 80%;
+    width: 65%;
 }
 .copyright{
     font-size: 12px;
@@ -25,7 +35,11 @@
   grid-template-columns: repeat(2, 1fr); /* two columns */
   gap: 6px;
 }
-
+.award{
+    text-align: left;
+    display: block;
+    margin-top: 2%;
+}
 .work-column {
   display: flex;
   flex-direction: column;

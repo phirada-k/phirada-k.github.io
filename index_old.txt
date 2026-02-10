@@ -34,3 +34,66 @@
 
 </body>
 </html>
+
+<a href="/portfolio/"><h1 class="nav-home-text-v2">PORTFOLIO</h1></a>
+
+VFX GALLERY
+
+
+    <div id="videoGallery_main">
+      <!-- Repeat this block for each video -->
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/Instigators.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/Instigators.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/Supacell.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/Supacell.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/comotion-phirada-1.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/comotion-phirada-1.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/comotion-phirada-2.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/comotion-phirada-2.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/comotion-phirada-3.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/comotion-phirada-3.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/comotion-phirada-4.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/comotion-phirada-4.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/library-breakdown.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/library-breakdown.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/FlyingShipV01.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/FlyingShipV01.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/dandelionBlow.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/dandelionBlow.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/succulentTexture.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/succulentTexture.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/dryIce.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/dryIce.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/TheMill.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/TheMill.MP4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/carved_in_stone_FX.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/carved_in_stone_FX.mp4" type="video/mp4">
+      </video>
+
+      <video class="videoVFX" preload="none" muted playsinline poster="../images/vfx/posters/For_IG_Breakdown.jpg" loading="lazy">
+        <source data-src="../images/vfx/videos/For_IG_Breakdown.mp4" type="video/mp4">
+      </video>

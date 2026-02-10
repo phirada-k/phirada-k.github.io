@@ -2,14 +2,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 6px; /* spacing between images */
-    place-items: center;
+    align-items: stretch;
   }
   .design-img{
-    width: 100%;
     border-radius: 15px;
-      height: 100%;          /* REQUIRED */
-  object-fit: cover;
-  display: block;
   }
   .design-work{
     margin-top: 2%;
@@ -24,10 +20,15 @@
 }
 .design-thumb img {
   transition: transform 0.4s ease;
+      height: 100%;          /* REQUIRED */
+          width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .design-thumb:hover img {
   transform: scale(1.05);
+  
 }
 
   p {
