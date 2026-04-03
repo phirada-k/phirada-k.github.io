@@ -35,7 +35,14 @@ body{
 }
 .about-text, .contact,
 .contact-email{
-  font-size: 17px;
+  font-size: 16px;
+}
+.recognition-title{
+  font-size:20px;
+  font-weight: 400;
+}
+.recognition-text{
+  font-size: 14px;
 }
 .filmography-block{
   display: block;
@@ -91,6 +98,9 @@ body{
 }
 .about-text, .contact{
     font-size: 15px;
+}
+.recognition-text{
+  font-size: 13px;
 }
 .contact-email{
   font-size: 22px;
